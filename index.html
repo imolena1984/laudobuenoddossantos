@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - Manutenção de Equipamentos Odontológicos</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.left === "-250px") {
+                menu.style.left = "0";
+            } else {
+                menu.style.left = "-250px";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Menu Sanduíche -->
+    <div id="menu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&#9776; Menu</a>
+        <a href="index.html">Principal</a>
+        <a href="manutencao.html">Manutenção</a>
+        <a href="contato.html">Contato</a>
+        <a href="localizacao.html">Localização</a>
+    </div>
+
+    <!-- Botão para abrir o menu -->
+    <span class="openbtn" onclick="toggleMenu()">&#9776;</span>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <header>
+            <h1>Manutenção Geral de Equipamentos Odontológicos</h1>
+        </header>
+
+        <section id="id equipamentos">
+            <h2>Apresentação</h2>
+            <p>Sou especializado em manutenção geral de equipamentos odontológicos e peças de mão.</p> <p>Oferecemos serviços de alta qualidade, garantindo a funcionalidade e durabilidade dos seus aparelhos.</p>
+            <img src="_img/cadeira01" alt="exemplo cadeira"/>
+        </section>
+
+        <section id="exemplos">
+            <h2>Informações sobre o Serviço</h2>
+            <p>Técmico altamente qualificado para lidar com uma variedade de equipamentos odontológicos, sempre seguindo os padrões mais rigorosos de qualidade e segurança.</p>
+            <p><strong>Mais de  15  anos de experiência no ramo,</strong> sendo conhecedor e mantenedor de diversas marcas e modelos, facilidando o desenvolvimento do trabalho com enorme qualidade.</p>
+            <h4>ATENDIMENTO SOMENTE PARA O LITORAL SUL DE SÃO PAULO</h4>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Criado por IGOR MOLENA. Todos os direitos reservados, cedido a Laudo Bueno dos Santos</p>
+    </footer>
+</body>
+</html>

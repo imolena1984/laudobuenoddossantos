@@ -1,0 +1,142 @@
+/* Estilo geral */
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Azul claro */
+    color: #333;
+}
+
+header {
+    background-color: #f0f8ff; /* Azul mais escuro */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+section img {
+    max-width: 100%; /* Para que a imagem se ajuste ao tamanho do container */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 2px solid #005f99; /* Borda azul */
+    border-radius: 5px; /* Arredonda os cantos da borda */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 20px; /* Espaçamento acima da imagem */
+    transition: transform 0.3s;
+}
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1, h2 {
+    color: #005f99;
+}
+
+p {
+    text-align: justify;
+}
+
+footer {
+    background-color: #005f99;
+    font-size: 10px;
+    color: white;
+    padding: 10px; /* Ajustado para maior clareza */
+    text-align: center;
+    position: fixcd; /* Alterado para permitir que o footer não fique fixo */
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+h6 {
+    font-size: 10px;
+}
+h4{
+    color:crimson;
+}
+
+/* Estilo do menu sanduíche */
+.menu {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #003f66;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.menu a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    background-color: #005f99;
+}
+
+.menu .closebtn {
+    font-size: 36px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 10px;
+}
+
+/* Botão sanduíche */
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #005f99;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.openbtn:hover {
+    background-color: #003f66;
+}
+
+/* Estilo da seção de apresentação */
+#exemplos {
+    padding: 20px;
+    text-align: center; /* Centraliza o texto e a imagem na seção */
+}
+
+.equipamento-img {
+    max-width: 100%; /* Para que a imagem se ajuste ao tamanho do container */
+    height: auto; /* Mantém a proporção da imagem */
+    border: 2px solid #005f99; /* Borda azul */
+    border-radius: 5px; /* Arredonda os cantos da borda */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-top: 20px; /* Espaçamento acima da imagem */
+    transition: transform 0.3s; /* Animação ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse sobre a imagem */
+.equipamento-img:hover {
+    transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
+}
+
+/* Para telas menores */
+@media screen and (max-height: 450px) {
+    .menu {
+        padding-top: 15px;
+    }
+    .menu a {
+        font-size: 18px;
+    }
+}
+
+iframe{
+    height: 500;
+    width: 500;
+}

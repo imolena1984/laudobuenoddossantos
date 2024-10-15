@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção - Manutenção de Equipamentos Odontológicos</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.left === "-250px") {
+                menu.style.left = "0";
+            } else {
+                menu.style.left = "-250px";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Menu Sanduíche -->
+    <div id="menu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&#9776; Menu</a>
+        <a href="index.html">Principal</a>
+        <a href="manutencao.html">Manutenção</a>
+        <a href="contato.html">Contato</a>
+        <a href="localizacao.html">Localização</a>
+    </div>
+
+    <!-- Botão para abrir o menu -->
+    <span class="openbtn" onclick="toggleMenu()">&#9776;</span>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <header>
+            <h1>Equipamentos que Trabalhamos</h1>
+        </header>
+
+        <section id="equipamentos">
+            <p>Trabalhamos com manutenção de uma ampla variedade de equipamentos odontológicos, incluindo:</p>
+            <ul>
+                <li> <strong>Cadeiras odontológicas</strong></li>
+                <img src="_img/cadeira01" alt="exemplo cadeira"/>
+                <li><strong>Autoclaves</strong></li>
+                <img src="_img/autoclave" alt="exemplo autoclave"/>
+                <li><strong>Peças de mão</strong></li>
+                <img src="_img/canetas de mao.jpg" alt="exemplo canetas de mao"/>
+                <li><strong>Compressores</strong></li>
+                <img src="_img/compressor.png    " alt="exemplo compreesor de ar"/>
+                <li><strong>Raio X Odontológico</strong></li>
+                <img src="_img/raiox.png" alt="exemplo Aparelho Raio X"/>
+                <li><strong>Aparelhos de Profilaxia</strong></li>
+                <img src="_img/ultrassom-odontologico.jpeg" alt="exemplo Ultrassom "/>
+                <li><strong>Fotopolimerizador</strong></li>
+                <img src="_img/fotopolimerizador.png" alt="exemplo "/>
+            </ul>
+        </section>
+
+     
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Criado por IGOR MOLENA. Todos os direitos reservados, cedido a Laudo Bueno dos Santos</p>
+    </footer>
+
+</body>
+</html>

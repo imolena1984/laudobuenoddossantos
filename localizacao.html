@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localização - Manutenção de Equipamentos Odontológicos</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.left === "-250px") {
+                menu.style.left = "0";
+            } else {
+                menu.style.left = "-250px";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Menu Sanduíche -->
+    <div id="menu" class="menu">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&#9776; Menu</a>
+        <a href="index.html">Principal</a>
+        <a href="manutencao.html">Manutenção</a>
+        <a href="contato.html">Contato</a>
+        <a href="localizacao.html">Localização</a>
+    </div>
+    <!-- Botão para abrir o menu -->
+    <span class="openbtn" onclick="toggleMenu()">&#9776;</span>
+
+    <!-- Conteúdo Principal -->
+    <div class="container">
+        <header>
+            <h1>Localização</h1>
+        </header>
+
+        <section id="localizacao">
+            <h2>ENDEREÇO</h2>
+            <h4>também realizo atendimento à domicilio</h4>
+            <p>Veja nossa localização no mapa abaixo:</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.584787709383!2d-46.675716425399095!3d-24.116092982204897!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce280b02818bfd%3A0xaaae7d0c23487c7!2sR.%20Alc%C3%ADdes%20dos%20Santos%20Dias%2C%20356%20-%20Balne%C3%A1rio%20Ita%C3%B3ca%2C%20Mongagu%C3%A1%20-%20SP%2C%2011730-000!5e0!3m2!1spt-BR!2sbr!4v1728916281844!5m2!1spt-BR!2sbr" width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <br>
+            <a href="https://waze.com/..." target="_blank">Abrir no Waze</a>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Criado por IGOR MOLENA. Todos os direitos reservados, cedido a Laudo Bueno dos Santos</p>
+    </footer>
+
+</body>
+</html>
