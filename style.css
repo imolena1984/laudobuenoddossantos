@@ -8,20 +8,12 @@ body {
 }
 
 header {
-    background-color: #f0f8ff; /* Azul mais escuro */
+    background-color: #f0f8ff; /* Azul claro */
     color: white;
     padding: 20px;
     text-align: center;
 }
-section img {
-    max-width: 100%; /* Para que a imagem se ajuste ao tamanho do container */
-    height: auto; /* Mantém a proporção da imagem */
-    border: 2px solid #005f99; /* Borda azul */
-    border-radius: 5px; /* Arredonda os cantos da borda */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    margin-top: 20px; /* Espaçamento acima da imagem */
-    transition: transform 0.3s;
-}
+
 .container {
     padding: 20px;
     max-width: 1200px;
@@ -40,10 +32,9 @@ footer {
     background-color: #005f99;
     font-size: 10px;
     color: white;
-    padding: 10px; /* Ajustado para maior clareza */
+    padding: 10px;
     text-align: center;
-    position: fixcd; /* Alterado para permitir que o footer não fique fixo */
-    text-align: center;
+    position: relative; /* O rodapé não ficará fixo no fundo da página */
     bottom: 0;
     width: 100%;
 }
@@ -51,74 +42,20 @@ footer {
 h6 {
     font-size: 10px;
 }
-h4{
-    color:crimson;
+
+h4 {
+    color: crimson;
 }
 
-/* Estilo do menu sanduíche */
-.menu {
-    height: 100%;
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: -250px;
-    background-color: #003f66;
-    padding-top: 60px;
-    transition: 0.5s;
-}
-
-.menu a {
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 22px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-
-.menu a:hover {
-    background-color: #005f99;
-}
-
-.menu .closebtn {
-    font-size: 36px;
-    color: white;
-    position: absolute;
-    top: 0;
-    left: 10px;
-}
-
-/* Botão sanduíche */
-.openbtn {
-    font-size: 30px;
-    cursor: pointer;
-    background-color: #005f99;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-}
-
-.openbtn:hover {
-    background-color: #003f66;
-}
-
-/* Estilo da seção de apresentação */
-#exemplos {
-    padding: 20px;
-    text-align: center; /* Centraliza o texto e a imagem na seção */
-}
-
-.equipamento-img {
+/* Estilo de imagens */
+section img, .equipamento-img {
     max-width: 100%; /* Para que a imagem se ajuste ao tamanho do container */
     height: auto; /* Mantém a proporção da imagem */
     border: 2px solid #005f99; /* Borda azul */
     border-radius: 5px; /* Arredonda os cantos da borda */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    margin-top: 20px; /* Espaçamento acima da imagem */
-    transition: transform 0.3s; /* Animação ao passar o mouse */
+    margin-top: 20px;
+    transition: transform 0.3s;
 }
 
 /* Efeito ao passar o mouse sobre a imagem */
@@ -126,17 +63,106 @@ h4{
     transform: scale(1.05); /* Aumenta a imagem ao passar o mouse */
 }
 
+/* Ajustes de layout e responsividade */
+
 /* Para telas menores */
-@media screen and (max-height: 450px) {
-    .menu {
-        padding-top: 15px;
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+        font-size: 16px;
     }
-    .menu a {
-        font-size: 18px;
+
+    .container {
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 8px;
+        padding: 5px;
     }
 }
 
-iframe{
-    height: 500;
-    width: 500;
+/* Para telas muito pequenas (celulares) */
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 14px;
+    }
+
+    nav ul {
+        flex-direction: column; /* Menu fica em coluna em telas menores */
+        align-items: flex-start;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+
+    .container {
+        padding: 5px;
+    }
+}
+
+/* Estilo do menu */
+nav {
+    background-color: #005f99;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Para que o menu se ajuste em telas menores */
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #003f66;
+    border-radius: 5px;
+}
+
+/* Estilo dos submenus */
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #005f99;
+    padding: 10px;
+}
+
+nav ul li:hover .submenu {
+    display: block; /* Mostra o submenu ao passar o mouse */
+    position: absolute;
+    top: 100%;
+    left: 0;
+    white-space: nowrap;
+}
+
+.submenu li {
+    margin: 0;
+}
+
+/* Para telas pequenas, submenus serão visíveis ao toque */
+@media (hover: none) {
+    nav ul li:active .submenu {
+        display: block;
+    }
+}
+
+/* Para garantir que as imagens no iframe se ajustem */
+iframe {
+    width: 100%;
+    height: auto;
+    border: 0;
 }
