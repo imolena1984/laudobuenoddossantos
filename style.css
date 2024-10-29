@@ -9,8 +9,8 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #2A3E52;
+    background-color: #E8F1F8;
 }
 
 /* Container Principal */
@@ -24,8 +24,8 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #1E3A5F;
+    color: #E8F1F8;
 }
 
 /* Menu Sanduíche */
@@ -35,7 +35,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333;
+    background-color: #1E3A5F;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -46,13 +46,13 @@ header {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 18px;
-    color: #fff;
+    color: #E8F1F8;
     display: block;
     transition: 0.3s;
 }
 
 .menu a:hover {
-    color: #f1f1f1;
+    color: #B2D7F5;
 }
 
 .menu .closebtn {
@@ -60,27 +60,28 @@ header {
     top: 10px;
     right: 25px;
     font-size: 36px;
-    color: #fff;
+    color: #E8F1F8;
 }
 
 .openbtn {
     font-size: 20px;
     cursor: pointer;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #1E3A5F;
+    background-color: #B2D7F5;
     padding: 10px 15px;
     border: none;
     position: fixed;
     top: 10px;
     left: 10px;
     z-index: 2;
+    border-radius: 5px;
 }
 
 /* Seções */
 section {
     margin: 20px 0;
     padding: 20px;
-    background-color: #fff;
+    background-color: #F0F7FF;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
@@ -95,8 +96,8 @@ section img {
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #1E3A5F;
+    color: #E8F1F8;
     margin-top: 20px;
 }
 
