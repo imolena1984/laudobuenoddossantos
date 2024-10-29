@@ -35,7 +35,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #1E3A5F;
+    background-color: #transparent;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
