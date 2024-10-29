@@ -24,8 +24,8 @@ body {
 header {
     text-align: center;
     padding: 20px;
-    background-color: #fff;
-    color: #E8F1F8;
+    background-color: #4682b4;
+    color: #fff;
 }
 
 /* Menu Sanduíche */
@@ -35,7 +35,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #transparent;
+    background-color: #4682b4;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -67,7 +67,7 @@ header {
     font-size: 20px;
     cursor: pointer;
     color: #1E3A5F;
-    background-color: #transparent;
+    background-color: #4682b4;
     padding: 10px 15px;
     border: none;
     position: fixed;
